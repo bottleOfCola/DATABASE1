@@ -33,6 +33,9 @@ namespace DATABASE1
             button4.Click += PostStr;
             button3.Enabled = false;
             dataGridView1.UserDeletingRow += dgv1UD;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.ReadOnly = true;
 
             _d = d;
             _str = 0;

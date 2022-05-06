@@ -51,6 +51,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.PSEVD,
@@ -59,6 +61,7 @@
             this.INDEX});
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(545, 320);
             this.dataGridView1.TabIndex = 0;
@@ -68,22 +71,26 @@
             this.PSEVD.FillWeight = 150F;
             this.PSEVD.HeaderText = "Псевдоним";
             this.PSEVD.Name = "PSEVD";
+            this.PSEVD.ReadOnly = true;
             // 
             // Human
             // 
             this.Human.HeaderText = "Человек";
             this.Human.Name = "Human";
+            this.Human.ReadOnly = true;
             this.Human.Width = 200;
             // 
             // STEPEN
             // 
             this.STEPEN.HeaderText = "Научная степень";
             this.STEPEN.Name = "STEPEN";
+            this.STEPEN.ReadOnly = true;
             // 
             // INDEX
             // 
             this.INDEX.HeaderText = "Индекс цитирования";
             this.INDEX.Name = "INDEX";
+            this.INDEX.ReadOnly = true;
             // 
             // numericUpDown1
             // 
